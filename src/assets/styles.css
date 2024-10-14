@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+  }
+  
+  .app-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50;
+  }
+  
+  .converter-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .converter-section input {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .converter-section select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .result-section {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #4CAF50;
+  }
+  
+  .history-title {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .history-entry {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px; 
+    margin-bottom: 10px;
+  }
+
+  .history-entry:hover{
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  
+  .history-entry p {
+    margin: 5px 0;
+    text-align: center;
+  }

@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import './assets/styles.css';
-import './assets/fonts.css';
-import CurrencySelector from './components/CurrencySelector';
-import ConversionHistory from './components/ConversionHistory';
-import { getExchangeRate } from './services/api';
+import CurrencySelector from './CurrencySelector';
+import ConversionHistory from './ConversionHistory';
+import { getExchangeRate } from '../services/api';
 
-const App = () => {
+const CurrencyConverter = () => {
   const [amount, setAmount] = useState(1);
-  const [fromCurrency, setFromCurrency] = useState('USD');
-  const [toCurrency, setToCurrency] = useState('BRL');
+  const [fromCurrency, setFromCurrency] = useState('BRL');
+  const [toCurrency, setToCurrency] = useState('USD');
   const [conversionResult, setConversionResult] = useState(null);
   const [history, setHistory] = useState([]);
 
@@ -25,7 +23,6 @@ const App = () => {
       const convertedAmount = (amount * rate).toFixed(2);
       setConversionResult(convertedAmount);
 
-      // Atualiza o histórico de conversão
       const newEntry = {
         fromCurrency,
         toCurrency,
@@ -72,4 +69,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default CurrencyConverter;
